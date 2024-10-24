@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/projects/proj1.png" type="image/icon type">
+</head>
+
+
+<body>
+<!-- Desktop Navigation -->
+<nav id="desktop-nav">
+    <div class="logo">Om Patel</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hamburger Navigation -->
+<nav id="hamburger-nav">
+    <div class="logo">Om Patel</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img data-lazyloaded="1" src="assets/profile-pic.jpg" 
+                 decoding="async" id="profile1" 
+                 alt="Om Patel's profile picture" title="Om Patel" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Om Patel</h1>
+            <p class="section__text__p2">Python Full Stack Developer</p>
+            <div class="btn-container">
+                <a href="https://drive.google.com/file/d/1fKCFG0xvuLjMmfNQPP3O8MMCrYHkSt5u/view?usp=drive_link" 
+                   target="_blank" rel="noopener">
+                    <button class="btn btn-color-2">See Resume</button>
+                </a>
+            </div>
+            <div id="socials-container">
+                <a target="_blank" href="https://www.linkedin.com/in/om-patel-36aa25257" rel="noopener">
+                    <img src="./assets/linkedin.png" alt="Om Patel's LinkedIn profile" class="icon" />
+                </a>
+                <a target="_blank" href="https://github.com/Ompatel28102004" rel="noopener">
+                    <img src="./assets/github.png" alt="Om Patel's Github profile" class="icon" />
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title" id="aboutTitle">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Internships</h3>
+                        <p>Python Full Stack Developer Intern<br />YADS Technologies Pvt. Ltd. (June - July 2024)</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelor of Technology<br />Institute of Infrastructure, Technology, Research And Management Ahmedabad (9.60/10)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm <span class="highlight">Om Patel</span>, a <span class="highlight">Full Stack Developer</span> 
+                        passionate about building intuitive and high-performance web applications.
+                        I have hands-on experience in <span class="highlight">JavaScript, React, Node.js</span>, 
+                        and databases like <span class="highlight">MYSQL, MongoDB and PostgreSQL</span>. 
+                        My work focuses on creating seamless user experiences with an eye for <span class="highlight">UI/UX design</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 id="projects" class="experience-sub-title">Projects</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3>Course Management System</h3>
+                                <p>Built with React, Node.js, Express, and MongoDB</p>
+                                <p>Developed a course management system with online attendance, enrollment, fee payment, results,Forums,and assignment submissions.</p>
+                                <hr>
+                                <a href="https://github.com/Coding1610/Course_Management_System" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Socket-Based Chat Application</h3>
+                                <p>Real-time encrypted messaging using React, Node.js, and Socket.IO</p>
+                                <p>Built a real-time encrypted chat app with direct/group messaging, file sharing, and emoji support.</p>
+                                <hr>
+                                <a href="https://github.com/Curious-nova/socket-chat-app" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Travel Booking System</h3>
+                                <p>Developed with React, Node.js, Express, and MySQL</p>
+                                <p>Built a travel booking platform to streamline service management for providers and improve the
+                                    planning process for customers.</p>
+                                <hr>
+
+                                <a href="https://github.com/Ompatel28102004/TRAVEL-BOOKING-SYSTEM" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Stock Market Price Prediction with Sentiment Analysis</h3>
+                                <p>Python, Pandas, NLTK, Scikit-learn</p>
+                                <p>Developed a stock market price prediction model using NLTK for sentiment analysis and Scikit-learn
+                                    for training and evaluation.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="blogs">
+        <p class="section__text__p1">Have a Look at My Recent</p>
+        <h1 class="title">Hackathon</h1>
+        <div class="experience-details-container">
+            <div class="details-container">
+                <div class="article-container">
+                    <img src="./assets/education.png" alt="Hackathon icon" class="blog-img" />
+                    <h2 class="experience-sub-title project-title">Flipkart GRiD 6.0 - Software Development Track</h2>
+                    <p>Participated in the 2024 Flipkart Hackathon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img data-lazyloaded="1" src="./assets/email.png"
+                    decoding="async" data-src="./assets/email.png" alt="Email icon"
+                    class="icon contact-icon email-icon" />
+                <p><a href="mailto:okpatel329@gmail.com">okpatel329@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img data-lazyloaded="1" src="./assets/linkedin.png"
+                    decoding="async" data-src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a target="_blank" href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 @Om Patel. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
