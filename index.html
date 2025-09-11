@@ -4,217 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Patel Portfolio</title>
+    <title>Om Patel | Data Science & Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/projects/icon.png" type="image/icon type">
+    <link rel="icon" href="./assets/projects/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-<!-- Desktop Navigation -->
-<nav id="desktop-nav">
-    <div class="logo">Om Patel</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+    <div id="progress-bar"></div>
+
+    <div class="animated-bg">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-</nav>
 
-<!-- Hamburger Navigation -->
-<nav id="hamburger-nav">
-    <div class="logo">Om Patel</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-
-    <section id="profile">
-        <div class="section__pic-container">
-            <img data-lazyloaded="1" src="assets/profile-pic.jpg" 
-                 decoding="async" id="profile1" 
-                 alt="Om Patel's profile picture" title="Om Patel" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Om Patel</h1>
-            <p class="section__text__p2">MERN Full Stack Web Development</p>
-            <div class="btn-container">
-                <a href="https://drive.google.com/file/d/1vaH_RENreZ39n4yc2yxAH4ab7A4LTxkf/view?usp=drive_link" 
-                   target="_blank" rel="noopener">
-                    <button class="btn btn-color-2">See Resume</button>
-                </a>
-            </div>
-            <div id="socials-container">
-                <a target="_blank" href="https://www.linkedin.com/in/om-patel-36aa25257" rel="noopener">
-                    <img src="./assets/linkedin.png" alt="Om Patel's LinkedIn profile" class="icon" />
-                </a>
-                <a target="_blank" href="https://github.com/Ompatel28102004" rel="noopener">
-                    <img src="./assets/github.png" alt="Om Patel's Github profile" class="icon" />
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title" id="aboutTitle">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Internships</h3>
-                        <p>Python Full Stack Developer Intern<br />YADS Technologies Pvt. Ltd. (June - July 2024)</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>Bachelor of Technology<br />Institute of Infrastructure, Technology, Research And Management Ahmedabad (9.63/10)</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I'm <span class="highlight">Om Patel</span>, a <span class="highlight">Full Stack Developer</span> 
-                        passionate about building intuitive and high-performance web applications.
-                        I have hands-on experience in <span class="highlight">JavaScript, React, Node.js</span>, 
-                        and databases like <span class="highlight">MYSQL, MongoDB and PostgreSQL</span>. 
-                        My work focuses on creating seamless user experiences with an eye for <span class="highlight">UI/UX design</span>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 id="projects" class="experience-sub-title">Projects</h2>
-                    <div class="article-container">
-                        <article>
-                            <div>
-                                <h3>Course Management System</h3>
-                                <p>Built with React, Node.js, Express, and MongoDB</p>
-                                <p>Developed a course management system with online attendance, enrollment, fee payment, results,Forums,and assignment submissions.</p>
-                                <hr>
-                                <a href="https://github.com/Ompatel28102004/Course-Management-System" target="_blank" rel="noopener">GitHub</a>
-                                <a href="https://drive.google.com/file/d/1u9stFzbkBSpcFQQulau6GoWLdCarO8Qv/view" target="_blank" rel="noopener">Documentation</a>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>ChitChat – Real-Time Chat Web Application</h3>
-                                <p>Real-time encrypted messaging using React, Node.js, and Socket.IO</p>
-                                <p>Built a real-time encrypted chat app with direct/group messaging, file sharing, and emoji support.</p>
-                                <hr>
-                                <a href="https://chitchat-neub.onrender.com/" target="_blank" rel="noopener">Live Application</a>
-                                <a href="https://github.com/Ompatel28102004/ChitChat-web-app" target="_blank" rel="noopener">GitHub</a>
-                                <a href="https://drive.google.com/file/d/12kbLVG2di850W2CLAV1-YXQ2zinuWZW6/view" target="_blank" rel="noopener">Documentation</a>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>ClipboardSync - Cross-Platform Clipboard Sharing App</h3>
-                                <p>React Native, Electron.js, Node.js, WebSockets</p>
-                                <p>Built a real-time clipboard sync tool for mobile and desktop over Wi-Fi, featuring peer-to-peer data sharing using WebSocket
-                                    and RAM storage without a database.</p>
-                                <hr>
-                                <a href="https://github.com/Ompatel28102004/ClipboardSync" target="_blank" rel="noopener">GitHub</a>
-                                <a href="https://drive.google.com/file/d/16MSXxvrkblji4Q1pYne15NVcKcnknIjK/view?usp=drive_link" target="_blank" rel="noopener">Documentation</a>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Travel Booking System</h3>
-                                <p>Developed with React, Node.js, Express, and MySQL</p>
-                                <p>Built a travel booking platform to streamline service management for providers and improve the
-                                    planning process for customers.</p>
-                                <hr>
-
-                                <a href="https://github.com/Curious-nova/College-Project" target="_blank" rel="noopener">GitHub</a>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Stock Market Price Prediction with Sentiment Analysis</h3>
-                                <p>Python, Pandas, NLTK, Scikit-learn</p>
-                                <p>Developed a stock market price prediction model using NLTK for sentiment analysis and Scikit-learn
-                                    for training and evaluation.</p>
-                                <hr>
-                                <a href="https://github.com/Ompatel28102004/Stock-Market-Price-Prediction" target="_blank" rel="noopener">GitHub</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="blogs">
-        <p class="section__text__p1">Have a Look at My Recent</p>
-        <h1 class="title">Hackathon</h1>
-        <div class="experience-details-container">
-            <div class="details-container">
-                <div class="article-container">
-                    <img src="./assets/education.png" alt="Hackathon icon" class="blog-img" />
-                    <h2 class="experience-sub-title project-title">Flipkart GRiD 6.0 - Software Development Track</h2>
-                    <p>Participated in the 2024 Flipkart Hackathon.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img data-lazyloaded="1" src="./assets/email.png"
-                    decoding="async" data-src="./assets/email.png" alt="Email icon"
-                    class="icon contact-icon email-icon" />
-                <p><a href="mailto:okpatel329@gmail.com">okpatel329@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img data-lazyloaded="1" src="./assets/linkedin.png"
-                    decoding="async" data-src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a target="_blank" href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <header class="header" id="header">
+        <nav id="navbar">
+            <a href="#" class="logo">Om Patel</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 @Om Patel. All Rights Reserved.</p>
+    </header>
+
+    <main>
+        <section id="profile" class="section-container">
+            <div class="profile-text">
+                <p class="fade-in">Hello, I'm</p>
+                <h1 class="title animated-title">Om Patel</h1>
+                <p class="section__text__p2 fade-in">
+                    <span id="typing-text">Data Science Enthusiast | Full Stack Developer</span>
+                </p>
+                <div class="btn-container fade-in">
+                    <a href="https://drive.google.com/file/d/1zulhz4ok3O7BNzxoNzY6vM7Pr1gw5_4Z/view"
+                        target="_blank" rel="noopener">
+                        <button class="btn btn-primary">See Resume</button>
+                    </a>
+                </div>
+                <div id="socials-container" class="fade-in">
+                    <a href="https://www.linkedin.com/in/om-patel-36aa25257" target="_blank" rel="noopener"
+                        aria-label="LinkedIn Profile">
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+                    </a>
+                    <a href="https://github.com/Ompatel28102004" target="_blank" rel="noopener"
+                        aria-label="GitHub Profile">
+                        <img src="./assets/github.png" alt="Github" class="icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="profile-pic-container fade-in">
+                <img src="assets/profile-pic.jpg" alt="Om Patel's profile picture" class="profile-pic" />
+            </div>
+        </section>
+
+        <section id="about" class="section-container hidden">
+            <h1 class="title">About Me</h1>
+            <div class="about-content">
+                <p>
+                    I'm <span class="highlight">Om Patel</span>, a <span class="highlight">B.Tech Computer Engineering</span>
+                    student (CGPA: 9.63/10) passionate about
+                    <span class="highlight">Data Science, Machine Learning, and Full Stack Development</span>.  
+                    Skilled in <span class="highlight">Python, JavaScript, React, Node.js, SQL/NoSQL</span>, and data-driven problem solving.  
+                    I enjoy working on <span class="highlight">AI/ML projects</span>, real-time applications, and
+                    data visualization that create meaningful impact.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="section-container hidden">
+            <h1 class="title">Experience</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Summer Research Intern (Data Science)</h3>
+                        <p class="timeline-subtext">DA-IICT, Gandhinagar (May - July 2025)</p>
+                        <p>Worked on two-wheeler driving pattern analysis using mobile sensors, clustering, anomaly detection, and ML pipelines.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Python Full Stack Developer Intern</h3>
+                        <p class="timeline-subtext">YADS Technologies Pvt. Ltd. (June - July 2024)</p>
+                        <p>Built API integrations, SQL optimizations, and applied sentiment analysis for business insights.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology</h3>
+                        <p class="timeline-subtext">IITRAM, Ahmedabad (2022 – Present) | CGPA: 9.63/10</p>
+                        <p>Computer Engineering with coursework in Machine Learning, Data Science, and Full Stack Development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-container hidden">
+            <h1 class="title">Technical Skills</h1>
+            <div class="skills-grid">
+                <div class="skill-card"><span>Python</span></div>
+                <div class="skill-card"><span>Machine Learning</span></div>
+                <div class="skill-card"><span>Data Analysis (Pandas, NumPy)</span></div>
+                <div class="skill-card"><span>Scikit-learn, TensorFlow, Keras</span></div>
+                <div class="skill-card"><span>SQL (PostgreSQL, MySQL)</span></div>
+                <div class="skill-card"><span>NoSQL (MongoDB)</span></div>
+                <div class="skill-card"><span>JavaScript</span></div>
+                <div class="skill-card"><span>React.js / Node.js / Express</span></div>
+                <div class="skill-card"><span>Data Visualization (Matplotlib, Seaborn, Power BI)</span></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-container hidden">
+            <h1 class="title">Projects</h1>
+            <div class="project-list">
+
+                <div class="project-item">
+                    <h3 class="project-title">Stock Market Price Prediction</h3>
+                    <p class="project-description">ML model integrating sentiment analysis and historical stock data using Python, NLTK, and Scikit-learn.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Ompatel28102004/Stock-Market-Price-Prediction" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <div class="project-item">
+                    <h3 class="project-title">Course Management System</h3>
+                    <p class="project-description">Comprehensive MERN system with course enrollment, attendance, fee payment, results, and discussion forums.</p>
+                    <div class="project-links">
+                        <a href="https://course-management-sys.netlify.app/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+                        <a href="https://github.com/Ompatel28102004/Course-Management-System" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <div class="project-item">
+                    <h3 class="project-title">ChitChat – Real-Time Chat App</h3>
+                    <p class="project-description">Encrypted real-time chat app with group messaging, file sharing, and emoji support using React, Node.js, and Socket.IO.</p>
+                    <div class="project-links">
+                        <a href="https://chitchat-neub.onrender.com/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+                        <a href="https://github.com/Ompatel28102004/ChitChat-web-app" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <div class="project-item">
+                    <h3 class="project-title">ClipboardSync</h3>
+                    <p class="project-description">Cross-platform clipboard sync app (mobile + desktop) over Wi-Fi using React Native, Electron.js, and Socket.IO.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Ompatel28102004/ClipboardSync" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section-container hidden">
+            <h1 class="title">Get in Touch</h1>
+            <p class="contact-text">I'm open to internships, full-time opportunities, and collaborations in Data Science, AI/ML, and Full Stack Development. Let's connect!</p>
+            <div class="contact-info">
+                <img src="./assets/email.png" alt="Email icon" class="icon" />
+                <a href="mailto:okpatel329@gmail.com">okpatel329@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="nav-links footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2025 Om Patel. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
