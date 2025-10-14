@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- TYPING TEXT ANIMATION ---
     const typingTextElement = document.getElementById('typing-text');
-    const textToType = "MERN Full Stack Web Development";
+    const textToType = " MERN Developer | Full Stack APP Developer | Data Science Enthusiast";
     let typeIndex = 0;
     function type() {
         if (typeIndex < textToType.length) {
