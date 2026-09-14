@@ -190,8 +190,17 @@ img {
 }
 .timeline-content h3 { font-size: 1.5rem; color: var(--headings-color); }
 .timeline-subtext { color: var(--body-text-color); font-style: italic; }
+.timeline-content ul { margin-top: 0.75rem; padding-left: 1.25rem; }
+.timeline-content ul li { margin-bottom: 0.5rem; }
 
 /* ===== SKILLS SECTION ===== */
+.skills-category { margin-bottom: 2.5rem; }
+.skills-category:last-child { margin-bottom: 0; }
+.skills-category h3 {
+    text-align: center; font-size: 1.15rem; font-weight: 600;
+    color: var(--primary-color); margin-bottom: 1.25rem;
+    text-transform: uppercase; letter-spacing: 0.5px;
+}
 .skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
 .skill-card {
     background-color: var(--card-color); padding: 1rem 2rem;
@@ -200,6 +209,20 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skill-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15); }
+
+/* ===== ACHIEVEMENTS SECTION ===== */
+.achievements-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem; max-width: 1000px; margin: 0 auto;
+}
+.achievement-card {
+    background-color: var(--card-color); padding: 2rem 1.5rem;
+    border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.achievement-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15); }
+.achievement-icon { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+.achievement-card p { color: var(--headings-color); font-weight: 500; }
 
 /* ===== PROJECTS SECTION ===== */
 .project-list {
@@ -250,7 +273,9 @@ img {
 
 /* ===== CONTACT & FOOTER ===== */
 #contact { text-align: center; }
-.contact-info { display: flex; justify-content: center; align-items: center; gap: 1rem; font-size: 1.2rem; font-weight: 600; }
+.contact-info { display: flex; justify-content: center; align-items: center; gap: 1rem; font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem; }
+.contact-info:last-child { margin-bottom: 0; }
+.contact-phone-icon { font-size: 1.6rem; line-height: 1; }
 footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border-color); }
 .footer-links { justify-content: center; margin-bottom: 1rem; }
 
