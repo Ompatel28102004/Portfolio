@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    // --- THEME TOGGLE (DAY / NIGHT) ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+            const next = current === 'light' ? 'dark' : 'light';
+            root.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+    }
+
     // --- SCROLL PROGRESS BAR ---
     const progressBar = document.getElementById('progress-bar');
     const calculateProgress = () => {
@@ -81,4 +93,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
+
+    // --- BACK TO TOP BUTTON ---
+    const backToTopBtn = document.getElementById('back-to-top');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });
